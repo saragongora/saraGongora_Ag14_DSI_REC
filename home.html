@@ -4,156 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Atrativos Turísticos - Votorantim</title>
 
-    <style>
-
-        body{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header{
-            background-color: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* DUAS COLUNAS */
-        .container{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-
-        /* CELULAR = 1 COLUNA */
-        @media (max-width: 700px){
-            .container{
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .card{
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-        }
-
-        .card img{
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .card h2{
-            color: #2e8b57;
-            text-align: center;
-        }
-
-        .card p{
-            padding: 15px;
-            text-align: justify;
-        }
-
-        footer{
-            background-color: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-    </style>
-
+    <!-- W3.CSS -->
+    <link rel="stylesheet"
+        href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-<body>
+<body class="w3-light-grey">
 
-    <header>
+    <!-- Cabeçalho -->
+    <header class="w3-container w3-green w3-center w3-padding-32">
         <h1>Atrativos Turísticos de Votorantim</h1>
     </header>
 
-    <div class="container">
+    <!-- Conteúdo -->
+    <div class="w3-content w3-padding">
 
-        <div class="card">
-            <img src="imagens/parque-ecologico.jpg" alt="Parque Ecológico">
-            <h2>Parque Ecológico</h2>
+        <div class="w3-row-padding">
 
-            <p>
-                O Parque Ecológico do Matão é um dos principais pontos turísticos
-                de Votorantim, ideal para caminhadas e lazer em família.
-            </p>
-        </div>
+            <!-- Card 1 -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="imagens/parque-ecologico.jpg"
+                        alt="Parque Ecológico" style="width:100%; height:250px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3 class="w3-text-green w3-center">Parque Ecológico</h3>
+                        <p>
+                            O Parque Ecológico do Matão é um dos principais pontos turísticos
+                            de Votorantim, ideal para caminhadas e lazer em família.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="card">
-            <img src="imagens/cachoeira-da-chave.jpg" alt="Cachoeira da Chave">
-            <h2>Cachoeira da Chave</h2>
+            <!-- Card 2 -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="imagens/cachoeira-da-chave.jpg"
+                        alt="Cachoeira da Chave" style="width:100%; height:250px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3 class="w3-text-green w3-center">Cachoeira da Chave</h3>
+                        <p>
+                            A Cachoeira da Chave oferece belas paisagens naturais e é muito
+                            visitada pelos moradores da cidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            <p>
-                A Cachoeira da Chave oferece belas paisagens naturais e é muito
-                visitada pelos moradores da cidade.
-            </p>
-        </div>
+            <!-- Card 3 -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="imagens/represa-itupararanga.jpg"
+                        alt="Represa de Itupararanga" style="width:100%; height:250px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3 class="w3-text-green w3-center">Represa de Itupararanga</h3>
+                        <p>
+                            A represa é ideal para pesca, passeios e esportes aquáticos,
+                            sendo um dos pontos mais conhecidos da região.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="card">
-            <img src="imagens/represa-itupararanga.jpg" alt="Represa de Itupararanga">
-            <h2>Represa de Itupararanga</h2>
+            <!-- Card 4 -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="imagens/praca-lecy.jpg"
+                        alt="Praça Lecy de Campos" style="width:100%; height:250px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3 class="w3-text-green w3-center">Praça Lecy de Campos</h3>
+                        <p>
+                            A praça central de Votorantim recebe eventos culturais,
+                            feiras e apresentações durante o ano.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            <p>
-                A represa é ideal para pesca, passeios e esportes aquáticos,
-                sendo um dos pontos mais conhecidos da região.
-            </p>
-        </div>
+            <!-- Card 5 -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="imagens/mosteiro.jpg"
+                        alt="Mosteiro São Bento" style="width:100%; height:250px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3 class="w3-text-green w3-center">Mosteiro São Bento</h3>
+                        <p>
+                            O mosteiro é conhecido pela tranquilidade e pela arquitetura
+                            religiosa que atrai visitantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="card">
-            <img src="imagens/praca-lecy.jpg" alt="Praça Lecy de Campos">
-            <h2>Praça Lecy de Campos</h2>
+            <!-- Card 6 -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="imagens/festa-junina.jpg"
+                        alt="Festa Junina de Votorantim" style="width:100%; height:250px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3 class="w3-text-green w3-center">Festa Junina de Votorantim</h3>
+                        <p>
+                            A tradicional Festa Junina de Votorantim reúne shows,
+                            comidas típicas e diversão para toda a família.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            <p>
-                A praça central de Votorantim recebe eventos culturais,
-                feiras e apresentações durante o ano.
-            </p>
-        </div>
-
-        <div class="card">
-            <img src="imagens/mosteiro.jpg" alt="Mosteiro São Bento">
-            <h2>Mosteiro São Bento</h2>
-
-            <p>
-                O mosteiro é conhecido pela tranquilidade e pela arquitetura
-                religiosa que atrai visitantes.
-            </p>
-        </div>
-
-        <div class="card">
-            <img src="imagens/festa-junina.jpg" alt="Festa Junina">
-            <h2>Festa Junina de Votorantim</h2>
-
-            <p>
-                A tradicional Festa Junina de Votorantim reúne shows,
-                comidas típicas e diversão para toda a família.
-            </p>
         </div>
 
     </div>
 
-    <footer>
-
-        <p>
-            Site desenvolvido para atividade escolar.
-        </p>
-
+    <!-- Rodapé -->
+    <footer class="w3-container w3-green w3-center w3-padding-16">
+        <p>Site desenvolvido para atividade escolar.</p>
         <p>
             Referências das imagens:
             Prefeitura de Votorantim, Google Imagens e sites de turismo.
         </p>
-
     </footer>
 
 </body>
